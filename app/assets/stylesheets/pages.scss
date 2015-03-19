@@ -1,0 +1,87 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Header */
+
+.nav { margin-left: 5rem; }
+.nav li {
+	display: inline-block;
+	padding-top: 2rem;
+}
+
+.nav a {
+	color: #333333; 
+	width: 100px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.nav a:hover {
+	background: #C0C0C0s;
+}
+
+.header h3 {
+	margin-right: 12rem;
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+.header p {
+	margin-right: 12rem;
+	font-size: 1.6rem;
+	font-weight: 300;
+	text-align: right;
+}
+
+
+/* Main Section */
+
+.main {
+	background-image: url('/assets/lifeguardtoweredit.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 553px;
+}
+
+.main h1 {
+	margin-bottom: 3px;
+	padding-top: 10%;
+	padding-right: 10%;
+	float: right;
+	font-size: 4.8rem;
+}
+
+.main p {
+	font-size: 2rem;
+	padding-right: 10%;
+	float: right;
+}
+
+.btn { 
+	background-color: #333333;
+	color: white;
+	font-size: 1.6rem;
+	font-weight: 100;
+	border: 1px solid white;
+	border-radius: 0px;
+	padding: 5 25 5 25;
+	margin-top: 4rem;
+	margin-right: 10%;
+	float: right;
+}
+
+
+/* Footer */
+
+.footer li {
+	display: inline;
+	padding: 15px;
+	text-decoration: none;
+	float: right;
+}
+
+.social {
+	margin-right: 10%;
+}
