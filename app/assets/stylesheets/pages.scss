@@ -46,15 +46,21 @@
 }
 
 .main h1 {
-	margin-bottom: 3px;
-	padding-top: 10%;
-	padding-right: 10%;
+	margin-bottom: 5px;
+	margin-top: 10%;
+	margin-right: 10%;
 	float: right;
 	font-size: 4.8rem;
 }
 
+.name {
+	background-color: white;
+	padding: 0px 8px 4px 8px;	
+}
+
 .main p {
 	font-size: 2rem;
+	font-weight: 300;
 	padding-right: 10%;
 	float: right;
 }
