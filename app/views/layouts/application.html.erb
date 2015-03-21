@@ -4,11 +4,10 @@
   <title>PortfolioApp</title>
    <link href='https://fonts.googleapis.com/css?family=Roboto:500,100,300,700' rel='stylesheet' type='text/css'>
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+   <%= csrf_meta_tags %>
 
 
 </head>
@@ -18,7 +17,7 @@
   <div class="row">
 	<div class="navigation col-sm-6">
 		<ul class="nav">
-			<li><a href="#">Portfolio</a></li>
+			<li><a href="/portfolio">Portfolio</a></li>
 			<li><a href="#">Philosophy</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Blog</a></li>
@@ -26,7 +25,7 @@
 		</ul>
 	</div>	
 	<div class="title col-sm-6">
-		<h3>Rachel Lanagan</h3>
+		<h3><a href="/">Rachel Lanagan</a></h3>
 		<p>Web Design &amp; Development</p>
 	</div>
 
@@ -47,6 +46,13 @@
   	</div>
   </div>
 </div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://unslider.com/unslider.min.js"></script>
+<!-- <script src="/pages.coffee"></script> -->
+<script src="assets/javascript/script.js"></script>
+
+
 
 </body>
 </html>
