@@ -6,50 +6,55 @@
   <!-- Latest compiled and minified CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
    <%= csrf_meta_tags %>
-
 
 </head>
 <body>
 
+
 <div class="header">
+ <div class="container">   
   <div class="row">
-	<div class="navigation col-sm-6">
-		<ul class="nav">
+	
+  <div class="nav col-sm-6">
+		<ul>
 			<li><a href="/portfolio">Portfolio</a></li>
 			<li><a href="#">Philosophy</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Blog</a></li>
+			<li><%= link_to "Blog", "http://www.tumblr.com/blog/upbythebootstrap" %></li>
+			<li><a href="/about">About</a></li>
 			<li><a href="#">Contact</a></li>
 		</ul>
 	</div>	
-	<div class="title col-sm-6">
+	
+  <div class="title col-sm-6">
 		<h3><a href="/">Rachel Lanagan</a></h3>
 		<p>Web Design &amp; Development</p>
 	</div>
 
-  </div>	
-</div>
+   </div> <!-- row -->
+ </div>	<!-- container -->
+</div> <!-- header -->
 
 <%= yield %>
 
 <div class="footer">
-  <div class="row">
-  	<div class="social">
+ <div class="container"> 
+  <div class="row" id="social">
   		<ul>
   			<li>&copy; Rachel Lanagan 2015</li>
   			<li><%= image_tag "github10.png" %></li>
   			<li><%= image_tag "linkedin1.png" %></li>
   			<li><%= image_tag "logo22.png" %></li>
   		</ul>
-  	</div>
+   </div> 
   </div>
 </div>
 
+
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="http://unslider.com/unslider.min.js"></script>
-<!-- <script src="/pages.coffee"></script> -->
+<!-- <script src="http://unslider.com/unslider.min.js"></script>
+<script src="/pages.coffee"></script>  -->
 <script src="assets/javascript/script.js"></script>
 
 

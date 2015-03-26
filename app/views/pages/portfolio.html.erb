@@ -1,43 +1,89 @@
-
-  <div class="banner">
-	<ul>
-		<li><%= image_tag "armando.png" %></li>
-		<li><%= image_tag "headlines.png" %></li>
-		<li><%= image_tag "milford.png" %></li>
-	</ul>
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "milford.png" %>
+      <div class="carousel-caption">
+          <h3></h3>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "armando.png" %>
+      <div class="carousel-caption">
+          <h3></h3>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag "pocketbook.png" %>
+      <div class="carousel-caption">
+          <h3></h3>
+      </div>
+    </div>
   </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
 
-  <div class="supporting">
-   <div class="container col-sm-8 col-sm-offset-2">	
-  	<h1>I want to bring colorful, useful web design to everyone.</h1>
-  	<p>If you have a dream to make real, I believe in it too, because having a dream is what brought me to web development in the first place. Beautiful web design and effortless functionality should be the universal connection between creators and consumers.</p>
-   </div>	
+
+<div class="supporting">
+ <div class="container col-sm-8 col-sm-offset-2">	
+	<h1>I want to bring colorful, useful web design to everyone.</h1>
+	<p>If you have a dream to make real, I believe in it too. Having a dream is what brought me to web development in the first place. Beautiful web design and effortless functionality should be the universal connection between creators and consumers.</p>
+ </div>	
+</div>
+
+<div class="portfolio">
+ <div class="container">
+ 	<div class="row">
+ 	<ul>
+ 		<li class="block col-sm-3 col-md-3">
+ 			<a href="#"><%= image_tag "headlines4.png" %></a>
+ 			<span>
+ 				<h3>Headlines</h3>
+ 				<p>Breaking news site with a responsive picture grid.</p>
+ 			</span>
+ 		</li>
+ 		<li class="block col-sm-3 col-md-3">
+ 			<a href="#"><%= image_tag "threadly.png" %></a>
+ 			<span>
+        <h3>Threadly</h3>
+        <p>Responsive comment thread site.</p>
+      </span>
+ 		</li>
+ 		<li class="block col-sm-3 col-md-3">
+ 			<a href="#"><%= image_tag "pocketbook_sm.png" %></a>
+ 			<span>
+        <h3>Pocketbook</h3>
+        <p>Cutting-edge news site design.</p>
+      </span>
+ 		</li>
+ 		<li class="block col-sm-3 col-md-3">
+ 			<a href="#"><%= image_tag "headlines4.png" %></a>
+ 			<span>
+        <h3>Threadly</h3>
+        <p>Responsive comment thread site.</p>
+      </span>
+ 		</li>
+ 	</ul>
   </div>
+ </div>	
+</div>
 
-  <div class="portfolio">
-   <div class="container">
-   	<ul>
-   		<li class="block">
-   			<a href="#"><%= image_tag "headlines2.png" %></a>
-   			<span>
-   				<h3>Headlines</h3>
-   				<p>Breaking news site with a responsive picture grid.</p>
-   			</span>
-   		</li>
-   		<li class="block">
-   			<a href="#"><%= image_tag "headlines2.png" %></a>
-   			<span>Headlines</span>
-   		</li>
-   		<li class="block">
-   			<a href="#"><%= image_tag "headlines2.png" %></a>
-   			<span>Headlines</span>
-   		</li>
-   		<li class="block">
-   			<a href="#"><%= image_tag "headlines2.png" %></a>
-   			<span>Headlines</span>
-   		</li>
-   	</ul>
-   </div>	
-  </div>
 
+
+<%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" %>
+<%= javascript_include_tag "js/bootstrap.min.js" %>
 
