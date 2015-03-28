@@ -17,20 +17,25 @@
  <div class="container">   
   <div class="row">
 	
-  <div class="nav col-sm-6">
+  <div class="nav col-xs-6">
 		<ul>
-			<li><a href="/portfolio">Portfolio</a></li>
-			<li><a href="#">Philosophy</a></li>
+			<li><%= link_to "Portfolio", portfolio_path %></li>
+			<li><%= link_to "Philosophy", philosophy_path %></li>
 			<li><%= link_to "Blog", "http://www.tumblr.com/blog/upbythebootstrap" %></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><%= link_to "About", about_path %></li>
+			<li><%= link_to "Contact", contact_path %></li>
+
 		</ul>
 	</div>	
 	
-  <div class="title col-sm-6">
-		<h3><a href="/">Rachel Lanagan</a></h3>
+  <div class="title col-xs-6">
+	 <a href="/">
+   <hgroup>	
+    <h3>Rachel Lanagan</h3>
 		<p>Web Design &amp; Development</p>
-	</div>
+	 </hgroup>
+   </a>
+  </div>
 
    </div> <!-- row -->
  </div>	<!-- container -->

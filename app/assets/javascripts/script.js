@@ -1,3 +1,12 @@
+$(document).ready(function(){
+     $("#carousel").carousel({
+     	interval: 2000,
+     	pause: false,
+     	wrap: true,
+     });
+});
+
+
 // $(document).ready(function () {
 
 // $(function() {
@@ -28,10 +37,3 @@
 // });
 
 
-$(document).ready(function(){
-     $("#carousel").carousel({
-     	interval: 2000,
-     	pause: false,
-     	wrap: true,
-     });
-});

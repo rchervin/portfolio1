@@ -6,7 +6,7 @@
 
 .nav li {
 	display: inline-block;
-	padding-top: 2rem;
+	padding-top: 2.7rem;
 }
 
 .nav li a {
@@ -18,7 +18,7 @@
 }
 
 .nav li a:hover {
-	background: #C0C0C0s;
+	color: #FDC226;
 }
 
 .title h3 {
@@ -29,6 +29,11 @@
 .title a {
 	color: #333333;
 	text-decoration: none;
+}
+
+.title a:hover {
+	text-decoration: none;
+	color: #FDC226;
 }
 
 .title p {
@@ -162,7 +167,8 @@
 .portrait h1 {
 	font-size: 4.8rem;
 	text-align: center;
-	position: relative;	
+	position: relative;
+	margin: 3rem 0 2rem 0;	
 }
 
 .portrait p {
