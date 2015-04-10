@@ -1,24 +1,24 @@
 <div class="main">
   <div class="container">
 
-  <div align="center">
-    <h3>Let's Talk!</h3>
-    <p>Please include your name, email and a message in the form below to inquire about my rates and design process.</p>
+    <div align="center">
+      <h3>Let's Talk!</h3>
+      <p>Please include your name, email and a message in the form below to inquire about my rates and design process.</p>
 
-    <%= simple_form_for(@contact, html: { class: 'form-horizontal' }) do |f| %>
-      <%= f.input :name, label: "Your Name:", :required => true %>
-      <%= f.input :email, label: "Email Address:", :required => true %>
-      <%= f.input :message, :as => :text, label: "What's up?", :required => true %>
-      <div class= "hidden">
-        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-      </div>
-      <div>
-        </br>
-        <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-      </div>
-    <% end %>
-  </div>
+      <%= simple_form_for(@contact, html: { class: 'form-horizontal' }) do |f| %>
+        <%= f.input :name, label: "Your Name:", :required => true %>
+        <%= f.input :email, label: "Email Address:", :required => true %>
+        <%= f.input :message, :as => :text, label: "What's up?", :required => true %>
+        <div class= "hidden">
+          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <div>
+          </br>
+          <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
 
 
-</div><!-- container -->
+ </div><!-- container -->
 </div><!-- main -->

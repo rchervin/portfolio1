@@ -1,12 +1,13 @@
-$(document).ready(function(){
-     $("#carousel").carousel({
+$(document).ready(function(){initPage();});
+window.on('page:change', function() {initPage();});
+
+function initPage() {
+	$("#carousel").carousel({
      	interval: 2000,
      	pause: false,
      	wrap: true,
      });
-});
-
-
+}
 // $(document).ready(function () {
 
 // $(function() {
